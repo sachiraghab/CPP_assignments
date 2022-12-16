@@ -1,0 +1,39 @@
+Total 24 hrs
+Regual days
+-----------
+sleep-			6:30
+genpact duty-		9:00
+coding life-		7:00
+productivity booster-	0:30
+other-			0:45
+meditation		0:05
+Exercise		0:10
+			_____
+			24:00
+
+Holidays
+--------
+sleep-			6:30
+coding life-		11:00
+productivity booster-	1:00
+Financial study-	2:00
+travel			0:45
+meditation		0:05
+Exercise		0:10
+other			2:30
+			_____
+			24:00
+
+
+1. GIT & GITHUB
+2. Data Structures & Algorithms
+3. Development: Web Development, Android Development
+4. Database: SQL, MySQL, MongoDB
+5. Artificial Intelligence, Machine Learning, Cloud
+
+
+
+My plan::
+a. C++
+b. C++ library
+c. DSA
