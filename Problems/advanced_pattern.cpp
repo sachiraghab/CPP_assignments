@@ -70,13 +70,6 @@ pattern10
  *  *
 *****
 
-pattern11
-      1
-     1 1
-    1 2 1
-   1 3 3 1
- 1 4 6 4 1
-1 5 10 10 5 1
 */
 
 /*
@@ -325,29 +318,3 @@ int main(){
     }
 }
 */
-
-// pattern11
-#include<iostream>
-using namespace std;
-int main(){
-    int n;
-    // cout<<"Enter the number of rows"<<endl;
-    // cin>>n;
-    n=7;
-    for(int i=1;i<=n;i++){
-        for(int s=0;s<n-i;s++)
-            cout<<" ";
-        for(int j=1;j<=2*i-1;j++){
-            if(j%2 == 0){
-                cout<<" ";
-            }
-            else if(j==1 || j==2*i-1){
-                cout<<1;
-            }
-            else
-                cout<<"#";
-        }
-        cout<<endl;
-    }
-}
-//half solved
