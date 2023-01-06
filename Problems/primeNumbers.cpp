@@ -1,44 +1,24 @@
+//print all prime numbers between two given numbers
 #include<iostream>
 using namespace std;
-bool checkPrime(int);
-void printPrime(int);
 void printPrime(int,int);
 int main(){
-    int n;
-    cout<<"Enter value of n = ";
-    cin>>n;
-    cout<<"\nFollowing are the prime numbers upto "<<n<<endl;
-    printPrime(n);
-    printPrime(100,200);
-    // cout<<checkPrime(2);
+    int a,b;
+    cout<<"Enter 2 numbers\n";
+    cin>>a>>b;
+    printPrime(a,b);
     return 0;
 }
-bool checkPrime(int n){
-    int d = 2;
-    while(d*d<=n){
-        if(n%d == 0)
-            return false;
-        d++;
-    }
-    return true;
-}
-void printPrime(int n){
-    if(n<2)
-        cout<<"There is no prime numbers below 2"<<endl;
-    for(int i=2;i<=n;i++){
-        if(checkPrime(i)){
-            cout<<i<<" ";
+void printPrime(int x, int y){
+    cout<<"Prime numbers between "<<x<<" and "<<y<<endl;
+    for(int n=x;n<=y;n++){
+        bool isPrime = true;
+        for(int i=2;i*i<=n;i++){
+            if(n%i==0)
+                isPrime = false;
         }
-    }
-    cout<<endl;
-}
-void printPrime(int a,int b){
-    if(a<2 || b<2)
-        cout<<"There is no prime number between "<<a<<" and "<<b<<endl;
-    for(int i=a;i<=b;i++){
-        if(checkPrime(i)){
-            cout<<i<<" ";
-        }
+        if(isPrime)
+            cout<<n<<" ";
     }
     cout<<endl;
 }
